@@ -2,6 +2,7 @@ package com.example.exercise2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 import androidx.fragment.app.Fragment
 import com.example.exercise2.databinding.ActivityMainBinding
 
@@ -17,6 +18,8 @@ class MainActivity : AppCompatActivity() {
         val secondFragment = SecondFragment()
         val thirdFragment = ThirdFragment()
 
+        setCurrentFragment(firstFragment)
+
         binding.bottomNavigationView.setOnItemSelectedListener {
             when (it.itemId) {
                 R.id.imHome -> setCurrentFragment(firstFragment)
@@ -26,6 +29,11 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.top_menu, menu)
+        return super.onCreateOptionsMenu(menu)
     }
 
     private fun setCurrentFragment(fragment: Fragment) =

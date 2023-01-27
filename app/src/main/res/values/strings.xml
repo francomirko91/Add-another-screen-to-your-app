@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Exercise2</string>
+    <string name="menu_item_ic">ic_item</string>
+    <string name="menu_item_1">item 1</string>
+    <string name="menu_item_2">item 2</string>
+    <string name="menu_item_3">item 3</string>
+    <string name="menu_sub_item_1">sub item 1</string>
+    <string name="menu_sub_item_2">sub item 2</string>
 </resources>
