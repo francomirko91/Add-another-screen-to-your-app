@@ -3,17 +3,17 @@
 
     <item
         android:id="@+id/imHome"
-        android:title="Home"
+        android:title="@string/home"
         android:icon="@drawable/ic_home"/>
 
     <item
         android:id="@+id/imMessages"
-        android:title="Messages"
+        android:title="@string/messages"
         android:icon="@drawable/ic_messages"/>
 
     <item
         android:id="@+id/imProfile"
-        android:title="Profile"
+        android:title="@string/profile"
         android:icon="@drawable/ic_profile"/>
 
 
